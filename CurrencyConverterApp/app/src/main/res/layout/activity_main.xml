@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_value"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="345dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Enter the Amount in USD" />
+
+    <TextView
+        android:id="@+id/tv_value"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:layout_width="279dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:text="             = ?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_value" />
+
+    <TextView
+        android:id="@+id/tv_label"
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="150dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="72dp"
+        android:text="    Convert To USD "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_value" />
+
+    <Button
+        android:id="@+id/btn_cad"
+        android:layout_width="186dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="34dp"
+        android:onClick="onBtnCadClicked"
+        android:text="CANADIAN (CAD)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label" />
+
+    <Button
+        android:id="@+id/btn_inr"
+        android:layout_width="213dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onBtnInrClicked"
+        android:text="INDIAN (INR)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cad" />
+
+    <Button
+        android:id="@+id/btn_eur"
+        android:layout_width="103dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onBtnEurClicked"
+        android:text="EURO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_inr" />
+</androidx.constraintlayout.widget.ConstraintLayout>

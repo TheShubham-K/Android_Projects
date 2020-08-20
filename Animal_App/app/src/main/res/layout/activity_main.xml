@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Hello World!"
+        android:background="@drawable/round_buttons"/>
+
+    <EditText
+        android:id="@+id/edtInput"
+        android:layout_width="325dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="some Input Here"
+        android:hint="@string/enter_some_text"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_buttons"
+        android:textAllCaps="false"
+        android:onClick="animate"
+        android:text="@string/button"/>
+
+
+
+</LinearLayout>
